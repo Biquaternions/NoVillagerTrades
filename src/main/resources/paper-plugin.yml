@@ -1,0 +1,7 @@
+name: NoVillagerTrades
+version: '1.0-SNAPSHOT'
+main: me.biquaternions.novillagertrades.NoVillagerTrades
+api-version: '1.21'
+load: STARTUP
+authors: [ Biquaternions ]
+description: Prevent villagers from trading
