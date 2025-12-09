@@ -1,6 +1,6 @@
 package me.biquaternions.novillagertrades.listener;
 
-import org.bukkit.entity.Villager;
+import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.VillagerAcquireTradeEvent;
@@ -10,7 +10,7 @@ public class VillagerListener implements Listener {
 
     @EventHandler
     public void onPlayerInteractEntity(PlayerInteractEntityEvent event) {
-        if (event.getRightClicked() instanceof Villager) {
+        if (event.getRightClicked().getType() == EntityType.VILLAGER) {
             event.setCancelled(true);
         }
     }
